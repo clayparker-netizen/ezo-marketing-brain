@@ -25,21 +25,16 @@
   .section-eyebrow { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; color: #3b6fe0; margin-bottom: 8px; }
   .section-title { font-size: 24px; font-weight: 800; color: #0f1729; margin-bottom: 6px; }
   .section-sub { font-size: 14px; color: #4a5a75; max-width: 680px; margin-bottom: 28px; line-height: 1.6; }
-  /* WHY USE IT */
+  .big-idea { background: #fff; border-left: 5px solid #3b6fe0; border-radius: 10px; padding: 22px 26px; font-size: 16px; margin-top: 40px; line-height: 1.6; box-shadow: 0 2px 12px rgba(0,0,0,0.05); }
+  .big-idea strong { color: #2147a8; }
   .why-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 14px; margin-top: 24px; }
   .why-card { background: #fff; border: 1px solid #e3e9f2; border-radius: 12px; padding: 24px 20px; }
   .why-card .wi { font-size: 28px; margin-bottom: 12px; }
   .why-card h4 { font-size: 15px; font-weight: 800; color: #0f1729; margin-bottom: 8px; }
   .why-card p { font-size: 13px; color: #5a6a82; line-height: 1.6; }
   .why-card .saving { margin-top: 12px; padding-top: 12px; border-top: 1px solid #f0f4ff; font-size: 12px; font-weight: 700; color: #3b6fe0; }
-  /* ORG DIAGRAM IMAGE */
   .org-img-wrap { margin-top: 28px; background: #fff; border: 1px solid #e3e9f2; border-radius: 14px; overflow: hidden; }
   .org-img-wrap img { width: 100%; height: auto; display: block; }
-  .org-img-placeholder { background: #f8fafc; border: 2px dashed #cbd5e1; border-radius: 14px; padding: 48px; text-align: center; margin-top: 28px; color: #94a3b8; }
-  .org-img-placeholder p { font-size: 14px; margin-bottom: 8px; }
-  .org-img-placeholder strong { color: #475569; }
-  /* CSS ORG FALLBACK */
-  .org-css { margin-top: 20px; }
   .person-chip { display: inline-flex; align-items: center; gap: 8px; background: #fff; border: 1.5px solid #c4b5fd; border-radius: 20px; padding: 7px 16px; font-size: 13px; font-weight: 700; color: #4c1d95; }
   .person-chip .role { font-weight: 400; color: #7c6ab0; font-size: 11px; }
   .person-chip.green { border-color: #86efac; color: #14532d; }
@@ -71,7 +66,19 @@
   .tc { background: #fff; border: 1px solid #e2e8f0; border-radius: 10px; padding: 3px 9px; font-size: 11px; color: #475569; }
   .tc strong { color: #1e293b; }
   .ul { font-size: 10px; color: #94a3b8; text-align: center; margin-top: 2px; }
-  /* HOW TO USE */
+  .pipeline { background: #fff; border: 1px solid #e3e9f2; border-radius: 14px; padding: 28px 32px; margin-top: 28px; }
+  .pipeline h4 { font-size: 13px; font-weight: 800; color: #0f1729; margin-bottom: 20px; text-transform: uppercase; letter-spacing: 1px; }
+  .pipe-steps { display: flex; align-items: center; gap: 0; flex-wrap: wrap; }
+  .pipe-step { flex: 1; min-width: 140px; text-align: center; }
+  .pipe-step .ps-icon { font-size: 22px; margin-bottom: 6px; }
+  .pipe-step .ps-label { font-size: 12px; font-weight: 800; color: #0f1729; margin-bottom: 3px; }
+  .pipe-step .ps-sub { font-size: 11px; color: #5a6a82; line-height: 1.4; }
+  .pipe-step .ps-timing { margin-top: 6px; display: inline-block; font-size: 10px; font-weight: 700; color: #3b6fe0; background: #eef3ff; border-radius: 4px; padding: 2px 7px; }
+  .pipe-arrow { font-size: 18px; color: #3b6fe0; font-weight: 900; padding: 0 8px; flex-shrink: 0; }
+  .stats-row { display: grid; grid-template-columns: repeat(4,1fr); gap: 12px; margin-top: 28px; }
+  .stat-card { background: #fff; border: 1px solid #e3e9f2; border-radius: 12px; padding: 18px 16px; text-align: center; }
+  .stat-card .num { font-size: 28px; font-weight: 900; color: #3b6fe0; }
+  .stat-card .lbl { font-size: 11px; color: #5a6a82; margin-top: 3px; }
   .how-steps { display: grid; grid-template-columns: repeat(2,1fr); gap: 16px; margin-top: 24px; }
   .how-step { background: #fff; border: 1px solid #e3e9f2; border-radius: 12px; padding: 24px; display: flex; gap: 16px; }
   .how-step .sn { width: 34px; height: 34px; background: #3b6fe0; color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 15px; font-weight: 900; flex-shrink: 0; }
@@ -83,7 +90,6 @@
   .prompt-box { background: #f7f9fc; border: 2px solid #3b6fe0; border-radius: 12px; padding: 20px 24px; margin-top: 20px; }
   .prompt-label { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; color: #3b6fe0; margin-bottom: 8px; }
   .prompt-text { font-family: 'Menlo','Monaco','Courier New',monospace; font-size: 13px; color: #1a2332; line-height: 1.8; }
-  /* EXAMPLES */
   .ex-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 16px; margin-top: 24px; }
   .ex-card { background: #fff; border: 1px solid #e3e9f2; border-radius: 12px; overflow: hidden; }
   .ex-head { padding: 16px 20px 12px; border-bottom: 1px solid #f0f4f8; }
@@ -93,362 +99,267 @@
   .ex-prompt { background: #f0f4ff; border-left: 3px solid #3b6fe0; border-radius: 0 6px 6px 0; padding: 10px 12px; font-size: 12px; color: #2147a8; font-style: italic; line-height: 1.6; margin-bottom: 12px; }
   .ex-label { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: #94a3b8; margin-bottom: 6px; }
   .ex-output { font-size: 12px; color: #374151; line-height: 1.6; background: #f9fafb; border-radius: 6px; padding: 10px 12px; }
-  /* ROADBLOCKS */
   .rb-list { display: grid; gap: 12px; margin-top: 24px; }
   .rb-card { background: #fff; border: 1px solid #e3e9f2; border-radius: 12px; padding: 20px 24px; display: grid; grid-template-columns: 1fr 1fr; gap: 20px; align-items: start; }
-  .rb-problem h5 { font-size: 13px; font-weight: 800; color: #a83030; margin-bottom: 6px; display: flex; align-items: center; gap: 8px; }
+  .rb-problem h5 { font-size: 13px; font-weight: 800; color: #a83030; margin-bottom: 6px; }
   .rb-problem p { font-size: 12px; color: #64748b; line-height: 1.55; }
-  .rb-fix h5 { font-size: 13px; font-weight: 800; color: #166534; margin-bottom: 6px; display: flex; align-items: center; gap: 8px; }
+  .rb-fix h5 { font-size: 13px; font-weight: 800; color: #166534; margin-bottom: 6px; }
   .rb-fix p { font-size: 12px; color: #374151; line-height: 1.55; }
-  /* STATS */
-  .stats-row { display: grid; grid-template-columns: repeat(4,1fr); gap: 12px; margin-top: 28px; }
-  .stat-card { background: #fff; border: 1px solid #e3e9f2; border-radius: 12px; padding: 18px 16px; text-align: center; }
-  .stat-card .num { font-size: 28px; font-weight: 900; color: #3b6fe0; }
-  .stat-card .lbl { font-size: 11px; color: #5a6a82; margin-top: 3px; }
-  /* INFRA */
   .infra-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 14px; margin-top: 28px; }
   .infra-card { background: #fff; border: 1px solid #e3e9f2; border-radius: 12px; padding: 22px 20px; }
   .infra-card .icon { font-size: 26px; margin-bottom: 10px; }
   .infra-card h4 { font-size: 15px; font-weight: 800; color: #0f1729; margin-bottom: 6px; }
   .infra-card p { font-size: 13px; color: #5a6a82; line-height: 1.55; }
-  /* COMING SOON */
   .cs-section { background: linear-gradient(135deg, #0f1729, #1a3a6b); border-radius: 14px; padding: 40px 36px; margin-top: 28px; color: #fff; text-align: center; }
   .cs-section h3 { font-size: 22px; font-weight: 900; margin-bottom: 8px; }
   .cs-section p { font-size: 14px; color: rgba(255,255,255,0.7); max-width: 500px; margin: 0 auto 24px; }
   .pills { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; }
   .pill-item { background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); border-radius: 20px; padding: 7px 18px; font-size: 13px; font-weight: 700; color: rgba(255,255,255,0.85); }
   .pill-item.live { background: #3b6fe0; border-color: #3b6fe0; color: #fff; }
-  /* FOOTER */
   .footer { margin-top: 48px; padding-top: 20px; border-top: 1px solid #dde3ef; display: flex; justify-content: space-between; align-items: center; font-size: 12px; color: #8a97ad; flex-wrap: wrap; gap: 10px; }
   .footer a { color: #3b6fe0; text-decoration: none; font-weight: 600; }
-  @media(max-width:640px){ .hero h1{font-size:26px;} .why-grid,.how-steps,.ex-grid,.infra-grid,.stats-row{grid-template-columns:1fr;} .rb-card{grid-template-columns:1fr;} }
+  @media(max-width:640px){ .hero h1{font-size:26px;} .why-grid,.how-steps,.ex-grid,.infra-grid,.stats-row{grid-template-columns:1fr;} .rb-card{grid-template-columns:1fr;} .pipe-steps{flex-direction:column;} }
 </style>
 </head>
 <body>
-
 <div class="topnav">
   <strong>🧠 EZO Marketing Brain</strong>
   <div class="topnav-links">
     <a href="#why">Why Use It</a>
-    <a href="#how">Architecture</a>
-    <a href="#use">How to Use</a>
+    <a href="#how">How It Works</a>
+    <a href="#use">Get Started</a>
     <a href="#examples">Examples</a>
     <a href="#roadblocks">Roadblocks</a>
-    <a href="#start">Get Started</a>
   </div>
 </div>
-
 <div class="hero">
   <div class="pill">EZO Marketing · June 2026</div>
-  <h1>We built a <em>shared AI brain.</em><br>Any team can plug in.</h1>
-  <p>An AI that runs on our real strategy — not generic guesses. Ask in plain English. Get answers like a teammate who's been here for years.</p>
+  <h1>One brain. Always current.<br><em>Every team, every task.</em></h1>
+  <p>An AI that runs on our real strategy — and automatically syncs from Marketing HQ every night. Ask anything. The brain already knows.</p>
   <div class="hero-btns">
-    <a class="btn-primary" href="#use">How to Use It</a>
-    <a class="btn-ghost" href="#examples">See Examples</a>
+    <a class="btn-primary" href="#use">Get Started</a>
+    <a class="btn-ghost" href="#how">See How It Works</a>
   </div>
 </div>
-
 <div class="wrap">
 
-  <!-- WHY USE IT -->
   <div id="why" class="section">
     <div class="section-eyebrow">Why Use It</div>
     <div class="section-title">Stop starting from scratch every session.</div>
-    <p class="section-sub">Every time someone opens a blank AI chat, they spend 5-10 minutes re-explaining who we are, what we sell, who we sell to, and what matters right now. Then they get a generic answer. The brain fixes that permanently.</p>
+    <p class="section-sub">Every time someone opens a blank AI chat, they spend 10 minutes re-explaining who we are, what we sell, who we target. Then they get a generic answer. The brain fixes that permanently — and keeps itself current automatically.</p>
     <div class="why-grid">
       <div class="why-card">
         <div class="wi">⏱</div>
         <h4>Save hours every week</h4>
-        <p>No more re-briefing. No more "we sell asset management software to IT teams." The brain already knows everything. Every session, every teammate, every time.</p>
-        <div class="saving">Estimated time saved: 3-5 hrs/person/week</div>
+        <p>No re-briefing. The brain already knows our ICPs, brand voice, wedge strategy, and current campaigns. Every session, every teammate, every time.</p>
+        <div class="saving">Estimated: 3–5 hrs/person/week</div>
       </div>
       <div class="why-card">
-        <div class="wi">🎯</div>
-        <h4>Consistent, on-brand output</h4>
-        <p>Every answer references our actual ICPs, our wedge messaging, our brand voice. No more off-brand copy. No more generic competitor responses. The brain is always calibrated.</p>
-        <div class="saving">Brand consistency across every output</div>
+        <div class="wi">🔄</div>
+        <h4>Always current — automatically</h4>
+        <p>Shawn updates a doc in Drive. By morning the brain has it. No manual copying. No version drift. The nightly sync handles it.</p>
+        <div class="saving">Nightly sync from Marketing HQ</div>
       </div>
       <div class="why-card">
         <div class="wi">🧠</div>
-        <h4>Institutional knowledge that doesn't leave</h4>
-        <p>Campaign history, positioning decisions, what worked and what didn't — it's all in the brain. New teammates ramp faster. Nothing gets lost when people are out.</p>
-        <div class="saving">Knowledge that compounds over time</div>
+        <h4>Institutional knowledge that compounds</h4>
+        <p>Campaign history, positioning decisions, what worked — all in the brain. New teammates ramp faster. Nothing gets lost.</p>
+        <div class="saving">Knowledge that grows over time</div>
       </div>
     </div>
   </div>
 
-  <!-- STATS -->
   <div class="section">
     <div class="section-eyebrow">What's Been Built</div>
     <div class="section-title">DG Brain — by the numbers</div>
     <div class="stats-row">
       <div class="stat-card"><div class="num">27</div><div class="lbl">Skills and Automations</div></div>
-      <div class="stat-card"><div class="num">11</div><div class="lbl">Knowledge Base Files</div></div>
+      <div class="stat-card"><div class="num">11</div><div class="lbl">Auto-Synced KB Files</div></div>
+      <div class="stat-card"><div class="num">Nightly</div><div class="lbl">Marketing HQ Sync</div></div>
       <div class="stat-card"><div class="num">Live</div><div class="lbl">HubSpot Integration</div></div>
-      <div class="stat-card"><div class="num">2</div><div class="lbl">Brains Live Now</div></div>
     </div>
   </div>
 
-  <!-- ORG DIAGRAM -->
   <div id="how" class="section">
-    <div class="section-eyebrow">Architecture</div>
-    <div class="section-title">Hub and Spoke — how the whole system is organized</div>
-    <p class="section-sub">One hub owns the company knowledge. Each team builds a spoke that acts on it. No duplication, no drift — every brain inherits the same strategy, ICPs, and brand voice from day one.</p>
+    <div class="section-eyebrow">How It Works</div>
+    <div class="section-title">Hub and Spoke — with an automated sync pipeline.</div>
+    <p class="section-sub">Marketing HQ is the source of truth. The DG Brain pulls from it automatically every night. Every session starts with current strategy, current ICPs, current brand voice — without anyone doing anything manually.</p>
 
-    <!-- IMAGE: replace src with uploaded image path once available -->
     <div class="org-img-wrap">
-      <img src="brain-architecture.png" alt="EZO Marketing Brain Architecture — Hub and Spoke org diagram" onerror="this.parentElement.style.display='none'; document.getElementById('org-fallback').style.display='block';">
+      <img src="image.png" alt="EZO Marketing Brain Architecture — Hub and Spoke org diagram" onerror="this.style.display='none'">
     </div>
 
-    <!-- CSS FALLBACK (shown if image not uploaded yet) -->
-    <div id="org-fallback" style="display:none;">
-      <div style="display:flex;flex-direction:column;align-items:center;gap:8px;margin-top:20px;">
-        <div class="person-chip">👤 <span><strong>Shawn Herring</strong> · <span class="role">CMO — strategy · OKRs · decisions</span></span></div>
-        <div class="oc"><div class="vline"></div><span class="iol">owns and feeds</span><div class="vline"></div></div>
-        <div style="width:270px;"><div class="brain-card card-purple"><div class="bce">🧠 CMO Brain <span class="badge badge-live">Live</span></div><h4>Shawn's Brain</h4><p>Org memory · exec context · strategic decisions</p></div></div>
-        <div class="oc"><div class="vline"></div><span class="iol">in / out</span><div class="vline"></div></div>
-        <div class="hub-box"><div class="hub-ey">Central Hub</div><h3>🗂 Marketing HQ</h3><p>All function brains push in · briefs · assets · templates · campaign context</p></div>
-      </div>
-      <div style="display:grid;grid-template-columns:1fr 1fr 1fr;margin-top:8px;align-items:start;gap:0;">
-        <div style="display:flex;flex-direction:column;align-items:center;gap:7px;">
-          <div style="display:flex;align-items:center;padding:8px 0 0;"><div style="width:70px;height:2px;background:#4ade80;"></div><span style="font-size:11px;color:#16a34a;padding:0 6px;">out</span></div>
-          <div class="person-chip green">👤 <span><strong>Clay Parker</strong> · <span class="role">Director, DG</span></span></div>
-          <div class="oc"><div class="vline" style="background:#86efac;"></div><span class="iol" style="color:#16a34a;">owns and feeds</span><div class="vline" style="background:#86efac;"></div></div>
-          <div style="width:200px;"><div class="brain-card card-green"><div class="bce">⚡ DG Leader Brain</div><h4>Clay's Brain</h4><p>Strategy · OKRs · direction</p></div></div>
-          <div class="oc"><div class="vline" style="background:#86efac;"></div><div class="vline" style="background:#86efac;"></div></div>
-          <div style="width:200px;"><div class="brain-card card-green-t"><div class="bce">⚡ DemandGen Brain <span class="badge badge-live">Live</span></div><h4>DG Brain</h4><p>Paid · web · RevOps · 27 skills · HubSpot</p></div></div>
-          <div class="team-chips" style="width:200px;"><div class="tc"><strong>Hassaan</strong> · Paid/Web</div><div class="tc"><strong>Shoaib</strong> · RevOps</div></div>
-          <div class="ul">uses for instructions</div>
+    <div class="pipeline">
+      <h4>The Automated Sync Pipeline</h4>
+      <div class="pipe-steps">
+        <div class="pipe-step">
+          <div class="ps-icon">📝</div>
+          <div class="ps-label">Shawn updates Drive</div>
+          <div class="ps-sub">ICP, brand voice, strategy, pricing — any doc in Marketing HQ</div>
         </div>
-        <div style="display:flex;flex-direction:column;align-items:center;padding-top:8px;">
-          <div style="width:2px;height:50px;background:#c9d2e0;"></div><span style="font-size:11px;color:#94a3b8;padding:4px 0;">out</span><div style="width:2px;height:30px;background:#fcd34d;"></div>
-          <div style="width:200px;margin-top:8px;"><div class="brain-card card-orange"><div class="bce">✏️ Engagement Brain <span class="badge badge-soon">Coming</span></div><h4>Content · Design · Social</h4><p>Briefs · copy · creative</p></div></div>
-          <div class="oc"><div class="vline" style="background:#fcd34d;"></div><div class="vline" style="background:#fcd34d;"></div></div>
-          <div style="width:200px;"><div class="brain-card card-orange"><div class="bce">✏️ EN Leader Brain <span class="badge badge-soon">Coming</span></div><h4>Engagement Leader</h4><p>Strategy · content direction</p></div></div>
-          <div class="oc"><div class="vline" style="background:#fcd34d;"></div><div class="vline" style="background:#fcd34d;"></div></div>
-          <div class="person-chip orange" style="font-size:12px;">👤 <span><strong>[Shawn — interim]</strong> · <span class="role">Head of Engagement · H2 2026</span></span></div>
-          <div class="team-chips" style="width:200px;margin-top:6px;"><div class="tc"><strong>Ramiah</strong> · Content</div><div class="tc"><strong>Musfirrah</strong> · Design</div><div class="tc"><strong>Palwashae</strong> · Social</div></div>
-          <div class="ul">uses for instructions</div>
+        <div class="pipe-arrow">→</div>
+        <div class="pipe-step">
+          <div class="ps-icon">🔄</div>
+          <div class="ps-label">Nightly KB Sync</div>
+          <div class="ps-sub">All 11 KB files pulled from Drive, compared, updated if changed</div>
+          <div class="ps-timing">2 AM every night</div>
         </div>
-        <div style="display:flex;flex-direction:column;align-items:center;gap:7px;">
-          <div style="display:flex;align-items:center;padding:8px 0 0;"><span style="font-size:11px;color:#2563eb;padding:0 6px;">out</span><div style="width:70px;height:2px;background:#93c5fd;"></div></div>
-          <div class="person-chip blue">👤 <span><strong>Rubab Zahra Naqvi</strong> · <span class="role">Sr. Manager, PMM</span></span></div>
-          <div class="oc"><div class="vline" style="background:#93c5fd;"></div><span class="iol" style="color:#2563eb;">owns and feeds</span><div class="vline" style="background:#93c5fd;"></div></div>
-          <div style="width:200px;"><div class="brain-card card-blue"><div class="bce">💡 PMM Leader Brain <span class="badge badge-soon">Coming</span></div><h4>Rubab's Brain</h4><p>Strategy · messaging · launches</p></div></div>
-          <div class="oc"><div class="vline" style="background:#93c5fd;"></div><div class="vline" style="background:#93c5fd;"></div></div>
-          <div style="width:200px;"><div class="brain-card card-blue"><div class="bce">💡 PMM Brain <span class="badge badge-soon">Coming</span></div><h4>PMM Brain</h4><p>Messaging · ICP · launches</p></div></div>
-          <div class="team-chips" style="width:200px;"><div class="tc"><strong>Beebrak</strong> · PMM</div><div class="tc"><strong>Zebunnissa</strong> · PMM</div><div class="tc"><strong>Ahmad</strong> · PMM</div><div class="tc"><strong>Shaheer</strong> · PMM</div></div>
-          <div class="ul">uses for instructions</div>
+        <div class="pipe-arrow">→</div>
+        <div class="pipe-step">
+          <div class="ps-icon">⚙️</div>
+          <div class="ps-label">GitHub Sync</div>
+          <div class="ps-sub">Updated files pushed to the ezo-dg-team repo — versioned and backed up</div>
+          <div class="ps-timing">Hourly</div>
+        </div>
+        <div class="pipe-arrow">→</div>
+        <div class="pipe-step">
+          <div class="ps-icon">💬</div>
+          <div class="ps-label">Slack Notification</div>
+          <div class="ps-sub">Team notified in #marketing-demandgen-internal when files change</div>
+        </div>
+        <div class="pipe-arrow">→</div>
+        <div class="pipe-step">
+          <div class="ps-icon">🧠</div>
+          <div class="ps-label">Brain is current</div>
+          <div class="ps-sub">Next session automatically has the latest context — nothing to do</div>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- HOW TO USE -->
   <div id="use" class="section">
-    <div class="section-eyebrow">How to Use It</div>
+    <div class="section-eyebrow">Getting Started</div>
     <div class="section-title">Four steps, every session.</div>
-    <p class="section-sub">The brain works best when you follow these steps in order. Skip step 3 and you'll get a blank session — the most common mistake.</p>
+    <p class="section-sub">The brain handles the rest automatically. Your only job is to open it from the right place and use the opener prompt.</p>
     <div class="how-steps">
       <div class="how-step">
         <div class="sn">1</div>
         <div>
           <h4>Get Claude Pro and get added</h4>
-          <p>Claude Projects require a Pro account ($20/mo). Ping Clay to be added to the DG Brain. Ping Shawn to be added to Marketing HQ. Once added, the project appears in your left sidebar under Projects — no install required.</p>
-          <div class="tip">💡 Don't have Pro? Ping Clay — the team may cover it.</div>
+          <p>Projects require Claude Pro ($20/mo). Ping Clay to be added to the DG Brain. Ping Shawn for Marketing HQ. Once added, it appears in your left sidebar — no install needed.</p>
+          <div class="tip">💡 Ping Clay if you need Pro covered.</div>
         </div>
       </div>
       <div class="how-step">
         <div class="sn">2</div>
         <div>
-          <h4>Open from inside the Project — not the homepage</h4>
-          <p>Log in to claude.ai → click Projects in the left sidebar → click EZO DG Brain → start a new conversation from there. This loads all the project files and memory automatically.</p>
-          <div class="tip">⚠️ Opening from the homepage or a new chat creates a blank session with zero context.</div>
+          <h4>Always open from inside the Project</h4>
+          <p>Log in to claude.ai → click Projects in the left sidebar → click EZO DG Brain → start your session from there. This loads all context automatically.</p>
+          <div class="tip">⚠️ Opening from the homepage creates a blank session — the brain won't load.</div>
         </div>
       </div>
       <div class="how-step">
         <div class="sn">3</div>
         <div>
-          <h4>Paste the session opener at the start</h4>
-          <p>Every session, paste the opener prompt first. It tells the brain to reload context before you start asking questions. Takes 5 seconds and saves you 10 minutes of re-briefing.</p>
-          <div class="tip">💡 Bookmark the opener prompt — you'll use it every time.</div>
+          <h4>Use the session opener</h4>
+          <p>Paste the prompt below at the start of every session. It takes 5 seconds and ensures the brain has reloaded the latest context before you start.</p>
+          <div class="tip">💡 Bookmark it. You will use it every time.</div>
         </div>
       </div>
       <div class="how-step">
         <div class="sn">4</div>
         <div>
-          <h4>Ask like a teammate, not a search engine</h4>
-          <p>Don't ask "what is demand gen?" Ask "what should our Q3 ITSM campaign focus on given our current pipeline?" The more context you give, the better the answer. The brain already knows the basics — push into the specifics.</p>
-          <div class="tip">💡 If the answer feels generic, add more context about what you're actually trying to do.</div>
+          <h4>Do all your work from here</h4>
+          <p>Briefs, analysis, copy, battlecards, funnel reviews, HubSpot queries — all from the Shared Brain. The context is loaded, the data is live, the history is there.</p>
+          <div class="tip">💡 The brain gets smarter as you add files back to the project library.</div>
         </div>
       </div>
     </div>
-
     <div class="warn-box">
       <span style="font-size:20px;flex-shrink:0;">⚠️</span>
-      <p><strong>The #1 mistake: opening from the homepage.</strong> Always go Projects → EZO DG Brain → New conversation. If Claude asks "what do you work on?" at the start of a session, you're in the wrong place — close it and start from the Project.</p>
+      <p><strong>The most common mistake: opening from the Claude homepage.</strong> Always go Projects → EZO DG Brain → New conversation. If Claude asks "what do you work on?" at the start — you're in the wrong place. Close it and start from the Project.</p>
     </div>
-
     <div class="prompt-box">
-      <div class="prompt-label">📋 Session opener — paste this every time before your first question</div>
+      <div class="prompt-label">📋 Paste this at the start of every session</div>
       <div class="prompt-text">"You are the EZO DG Brain. Start by reviewing the project files to refresh your context, then confirm what you know about current campaigns, our brand voice, and any open priorities. What's top of mind?"</div>
     </div>
   </div>
 
-  <!-- EXAMPLES -->
   <div id="examples" class="section">
     <div class="section-eyebrow">Examples</div>
-    <div class="section-title">What good looks like — real prompts and outputs.</div>
-    <p class="section-sub">These aren't hypotheticals. These are the kinds of prompts that work in the DG Brain today, and what you should expect back.</p>
+    <div class="section-title">Real prompts. Real outputs.</div>
+    <p class="section-sub">These work in the DG Brain today. The brain already knows the context — just ask.</p>
     <div class="ex-grid">
       <div class="ex-card">
-        <div class="ex-head">
-          <div class="tag">Campaign Brief</div>
-          <h5>Q3 Pipeline Gen</h5>
-        </div>
+        <div class="ex-head"><div class="tag">Campaign Brief</div><h5>Q3 Pipeline Gen</h5></div>
         <div class="ex-body">
           <div class="ex-label">Your prompt</div>
           <div class="ex-prompt">"Write a campaign brief for Q3 pipeline gen targeting ITSM teams at mid-market manufacturing companies."</div>
           <div class="ex-label">What you get back</div>
-          <div class="ex-output">A full brief with ICP breakdown (IT Director, 500-2000 employees, manufacturing vertical), wedge messaging against ServiceNow, recommended channels (LinkedIn, G2, content syndication), KPIs tied to our pipeline targets, and copy tone guidelines — all grounded in our actual positioning docs.</div>
+          <div class="ex-output">A full brief with ICP breakdown, wedge messaging against ServiceNow, recommended channels, KPIs tied to our pipeline targets — all grounded in our actual positioning docs.</div>
         </div>
       </div>
       <div class="ex-card">
-        <div class="ex-head">
-          <div class="tag">Funnel Analysis</div>
-          <h5>MQL-to-SQL Leak</h5>
-        </div>
+        <div class="ex-head"><div class="tag">Funnel Analysis</div><h5>MQL-to-SQL Leak</h5></div>
         <div class="ex-body">
           <div class="ex-label">Your prompt</div>
-          <div class="ex-prompt">"Pull our MQL-to-SQL conversion rate by product line this quarter and tell me where we're leaking and why."</div>
+          <div class="ex-prompt">"Pull our MQL-to-SQL conversion rate by product line this quarter and tell me where we're leaking."</div>
           <div class="ex-label">What you get back</div>
-          <div class="ex-output">Live HubSpot data showing conversion rates per product (EZO EAM, AssetSonar, EZRentOut), a diagnosis of which stages are the biggest drop-off points, and a hypothesis on root cause — connected to what we know about each ICP's buying behavior.</div>
+          <div class="ex-output">Live HubSpot data by product, a diagnosis of the biggest drop-off points, and a hypothesis on root cause — connected to what we know about each ICP's buying behavior.</div>
         </div>
       </div>
       <div class="ex-card">
-        <div class="ex-head">
-          <div class="tag">Competitive</div>
-          <h5>Battlecard vs Snipe-IT</h5>
-        </div>
+        <div class="ex-head"><div class="tag">Competitive</div><h5>Battlecard vs Snipe-IT</h5></div>
         <div class="ex-body">
           <div class="ex-label">Your prompt</div>
           <div class="ex-prompt">"Build a battlecard for deals where we're competing with Snipe-IT on price. IT Director buyer, mid-market."</div>
           <div class="ex-label">What you get back</div>
-          <div class="ex-output">A structured battlecard with our positioning against Snipe-IT, their typical objections, our trust-first counter-narrative, and specific proof points — drawn directly from our competitive intel files and wedge strategy doc.</div>
+          <div class="ex-output">Structured battlecard with our positioning, their objections, our trust-first counter-narrative, and proof points — drawn from our competitive intel and wedge strategy docs.</div>
         </div>
       </div>
       <div class="ex-card">
-        <div class="ex-head">
-          <div class="tag">Content</div>
-          <h5>LinkedIn Ad Copy</h5>
-        </div>
+        <div class="ex-head"><div class="tag">Content</div><h5>LinkedIn Ad Copy</h5></div>
         <div class="ex-body">
           <div class="ex-label">Your prompt</div>
-          <div class="ex-prompt">"Write 3 LinkedIn ad headlines for EZO EAM targeting IT Directors. Use our trust-first positioning and keep it under 150 chars each."</div>
+          <div class="ex-prompt">"Write 3 LinkedIn ad headlines for EZO EAM targeting IT Directors. Trust-first positioning, under 150 chars."</div>
           <div class="ex-label">What you get back</div>
-          <div class="ex-output">Three on-brand headline options that use our actual voice — direct, confident, no corporate filler. Each references a real pain point from the EAM ICP doc. No generic "transform your IT operations" nonsense.</div>
+          <div class="ex-output">Three on-brand options using our actual voice — direct, confident, no filler. Each references a real pain point from the EAM ICP doc.</div>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- ROADBLOCKS -->
   <div id="roadblocks" class="section">
     <div class="section-eyebrow">If You Hit Roadblocks</div>
     <div class="section-title">Common issues and exactly how to fix them.</div>
-    <p class="section-sub">Most problems come down to one of five things. Here's how to diagnose and fix each one.</p>
     <div class="rb-list">
       <div class="rb-card">
-        <div class="rb-problem">
-          <h5>🚨 The brain doesn't know who we are</h5>
-          <p>Claude is responding generically. It doesn't seem to know our ICPs, brand voice, or what we do. Answers feel like they came from a search engine.</p>
-        </div>
-        <div class="rb-fix">
-          <h5>✅ Fix: You're in the wrong session</h5>
-          <p>Close this chat. Go back to claude.ai → Projects → EZO DG Brain → start a new conversation from inside the project. Then paste the session opener prompt. Never start from the homepage.</p>
-        </div>
+        <div class="rb-problem"><h5>🚨 Brain doesn't know who we are</h5><p>Claude is responding generically — doesn't know our ICPs, brand voice, or strategy.</p></div>
+        <div class="rb-fix"><h5>✅ Fix: Wrong session</h5><p>Close the chat. Go to Projects → EZO DG Brain → start a new conversation from inside the project. Then paste the opener prompt.</p></div>
       </div>
       <div class="rb-card">
-        <div class="rb-problem">
-          <h5>🚨 Context seems stale or outdated</h5>
-          <p>The brain is referencing old campaigns, wrong priorities, or information that's been superseded. It's not up to date.</p>
-        </div>
-        <div class="rb-fix">
-          <h5>✅ Fix: The project files need updating</h5>
-          <p>Ping Clay or Shawn — a project file needs to be updated. The brain only knows what's in its files. If something changed and the file wasn't updated, the brain doesn't know about it.</p>
-        </div>
+        <div class="rb-problem"><h5>🚨 Context seems stale or wrong</h5><p>Brain is referencing outdated campaigns, old priorities, or superseded information.</p></div>
+        <div class="rb-fix"><h5>✅ Fix: Check sync or ping Shawn</h5><p>The nightly sync pulls from Drive. If Drive hasn't been updated, the brain won't know. Ping Shawn to update the relevant doc — brain catches up overnight.</p></div>
       </div>
       <div class="rb-card">
-        <div class="rb-problem">
-          <h5>🚨 HubSpot data isn't loading</h5>
-          <p>You asked for pipeline data or CRM metrics and got a message that live data is unavailable, or got numbers that don't look right.</p>
-        </div>
-        <div class="rb-fix">
-          <h5>✅ Fix: Check the HubSpot connection</h5>
-          <p>The HubSpot integration may need to be refreshed. Ping Clay with what you asked for — he can pull the data directly or re-authorize the connection. This is occasional, not a daily issue.</p>
-        </div>
+        <div class="rb-problem"><h5>🚨 HubSpot data isn't loading</h5><p>Asked for pipeline data and got an error or wrong numbers.</p></div>
+        <div class="rb-fix"><h5>✅ Fix: Ping Clay</h5><p>The HubSpot connection may need a refresh. Clay can pull the data directly or re-authorize. Occasional, not daily.</p></div>
       </div>
       <div class="rb-card">
-        <div class="rb-problem">
-          <h5>🚨 The answer is good but too long / too short</h5>
-          <p>You got a wall of text when you wanted a quick answer, or a one-liner when you needed a full brief.</p>
-        </div>
-        <div class="rb-fix">
-          <h5>✅ Fix: Tell it the format you need</h5>
-          <p>Add format instructions to your prompt: "Give me this in bullet points," "Keep it under 200 words," "Give me a full brief with sections." The brain takes direction well — just be explicit about what you want.</p>
-        </div>
+        <div class="rb-problem"><h5>🚨 Answer too long or too short</h5><p>Got a wall of text when you wanted a quick answer, or vice versa.</p></div>
+        <div class="rb-fix"><h5>✅ Fix: Tell it the format</h5><p>"Give me this in bullet points." "Keep it under 200 words." "Full brief with sections." The brain takes direction — just be explicit.</p></div>
       </div>
       <div class="rb-card">
-        <div class="rb-problem">
-          <h5>🚨 I don't see the project in my sidebar</h5>
-          <p>You logged in but don't see EZO DG Brain or Marketing HQ anywhere in Claude.</p>
-        </div>
-        <div class="rb-fix">
-          <h5>✅ Fix: You haven't been added yet (or need Pro)</h5>
-          <p>Two things to check: (1) Do you have Claude Pro? Projects are Pro-only — ping Clay if unsure. (2) Have you been added to the project? Ping Clay for DG Brain access or Shawn for Marketing HQ. Once added, it appears within a few minutes.</p>
-        </div>
+        <div class="rb-problem"><h5>🚨 Project not in my sidebar</h5><p>Logged in to Claude but can't find the project anywhere.</p></div>
+        <div class="rb-fix"><h5>✅ Fix: Access or Pro missing</h5><p>Two checks: (1) Do you have Claude Pro? It's required. (2) Have you been added? Ping Clay for DG Brain, Shawn for Marketing HQ. Appears within minutes once added.</p></div>
       </div>
     </div>
   </div>
 
-  <!-- GET STARTED -->
-  <div id="start" class="section">
-    <div class="section-eyebrow">Getting Access</div>
-    <div class="section-title">Ready to use it? Here's who to ping.</div>
-    <div class="how-steps">
-      <div class="how-step" style="align-items:center;">
-        <div class="sn" style="background:#166534;">DG</div>
-        <div>
-          <h4>EZO DG Brain — ping Clay Parker</h4>
-          <p>Hassaan, Shoaib, and anyone in the DG function. Covers paid, web, RevOps, pipeline, campaign work, and competitive.</p>
-        </div>
-      </div>
-      <div class="how-step" style="align-items:center;">
-        <div class="sn" style="background:#4c1d95;">HQ</div>
-        <div>
-          <h4>Marketing HQ (Shawn's Brain) — ping Shawn</h4>
-          <p>For access to the hub — strategy, ICPs, brand voice, pricing. This is the source of truth all spokes inherit from.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- INFRA -->
   <div class="section">
     <div class="section-eyebrow">Infrastructure</div>
-    <div class="section-title">Where everything lives</div>
+    <div class="section-title">Where everything lives and how it connects</div>
     <div class="infra-grid">
-      <div class="infra-card"><div class="icon">🗂</div><h4>Google Drive (Hub)</h4><p>Strategy docs, ICPs, brand voice, competitive intel, pricing. Shawn's Marketing HQ. The source of truth every brain inherits.</p></div>
-      <div class="infra-card"><div class="icon">⚙️</div><h4>GitHub (DG Spoke)</h4><p>DG Brain skills, automations, knowledge base. Version-controlled, synced to Drive. 36 commits and growing.</p></div>
-      <div class="infra-card"><div class="icon">🤖</div><h4>Claude Projects</h4><p>Where you actually work with the brain. Persistent sessions with memory — Drive and GitHub files are what it reads.</p></div>
+      <div class="infra-card"><div class="icon">📝</div><h4>Google Drive (Source of Truth)</h4><p>Shawn's Marketing HQ. Strategy, ICPs, brand voice, pricing, competitive intel. When this changes, everything downstream updates automatically overnight.</p></div>
+      <div class="infra-card"><div class="icon">⚙️</div><h4>GitHub (Version Control)</h4><p>DG Brain skills, commands, and KB files. Hourly sync from Drive. Every change is versioned, backed up, and triggers a Slack notification to the team.</p></div>
+      <div class="infra-card"><div class="icon">🤖</div><h4>Claude Projects (Workspace)</h4><p>Where you actually work. The Shared Brain loads all KB files at session start. Do all your DG work here — briefs, analysis, copy, data queries.</p></div>
     </div>
   </div>
 
-  <!-- COMING NEXT -->
   <div class="section">
     <div class="cs-section">
       <h3>DG is live. PMM and Engagement are next.</h3>
-      <p>The hub is built. The model is proven. Each team plugs a spoke in and immediately inherits all strategy, ICP, and brand context.</p>
+      <p>The hub is built. The sync pipeline is running. Each new spoke inherits the same foundation — strategy, ICPs, and brand context from day one, automatically.</p>
       <div class="pills">
         <div class="pill-item live">✓ CMO Brain — Live</div>
         <div class="pill-item live">✓ DG Brain — Live</div>
